@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>JSPBasic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  
+  <!-- 여기서부터가 어논테이션틀 주석처리하고, xml로 서블릿 설정하는 방법  -->
+  	<servlet>
+  		<servlet-name>basic</servlet-name>
+  		<servlet-class>com.servlet.TestServlet02</servlet-class>
+  	</servlet>
+  <!-- basic 변수에 대한 맵핑 설정  -->  
+  	<servlet-mapping>
+  		<servlet-name>basic</servlet-name>
+  		<url-pattern>/apple</url-pattern>
+  	</servlet-mapping>
+  
+  
+  <!-- 예외페이지 전역설정 -->
+<!-- 	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page>
+	<error-page>
+		<exception-type>java.lang.NullPointException</exception-type>
+		<location>/errorpage/error_view.jsp</location>
+	</error-page> 
+-->
+  
+  
+  
+  
+</web-app>

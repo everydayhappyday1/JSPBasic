@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- form 태그는 대표적인 블럭태그 -->
+	<!-- 사용자가 입력한 값을 서버(우리 프로젝트)로 전송할 때 사용한다.  -->
+	
+	<form>
+		<h3>회원가입양식</h3>
+		<hr>
+		아이디: <input type="text" size="10" placeholder="8글자"><br>
+		비밀번호: <input type="password" size="10" placeholder="5글자"><br>
+		
+		관심분야
+		<!-- checkbox, radio 버튼은 name 속성으로 하나로 묶어줘야 함 (그룹화) -->
+		<input type ="checkbox" name="inter"> JAVA
+		<input type ="checkbox" name="inter"> JSP
+		<input type ="checkbox" name="inter"> DB
+		<input type ="checkbox" name="inter"> SPRING
+		<input type ="checkbox" name="inter"> 응용소프트웨어
+		
+		<br>
+		관심분야
+		<input type ="radio" name="interrr"> 경영학과
+		<input type ="radio" name="interrr"> 컴퓨터공학과
+		<input type ="radio" name="interrr"> 수학과
+		<input type ="radio" name="interrr"> 기계공학과
+		
+		
+		
+		<br>
+		<!-- 목록처럼 나온다. -->
+		<select> 
+			<option>서울시</option>
+			<option>용인시</option>
+			<option>부산시</option>
+			<option>성남시</option>
+		</select>
+		
+		
+		
+		<br>
+		자신을&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소개해보세요!
+		<textarea row="5" col="30"></textarea>
+		
+		
+		
+		<br>
+		<!-- 둘이 똑같이 나온다. 둘 다 사용 가능 -->
+		<input type="button" value="버튼">
+		<button type="button">버튼</button>
+		
+		<br>
+		<input type="submit" value="전송하기">
+		<input type="reset" value="초기화">
+		<input type="file" value="파일첨부">
+		
+		
+	</form>
+	
+	
+	
+</body>
+</html>

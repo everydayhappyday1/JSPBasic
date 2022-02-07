@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>
+		Emp 정보
+		</h3>
+		<form> <!-- form 태그로 테이블을 감싼다. 다른 곳으로 정보를 전달해야 하기 때문에  -->
+			<table border="1">
+				<tr>
+					<td>사원번호</td>
+					<td><input type="text" size="10"></td>
+				</tr>
+				<tr>
+					<td>이름</td>
+					<td><input type="text" size="10"></td>
+				</tr>
+				<tr>
+					<td>성별</td>
+					<td><input type="radio" name="gender"> 남자 <input
+						type="radio" name="gender"> 여자</td>
+				</tr>
+				<tr>
+					<td>직업</td>
+					<td><input type="text" size="10"></td>
+				</tr>
+				<tr>
+					<td>상사</td>
+					<td><select>
+							<option>7369</option>
+							<option>1185</option>
+							<option>9595</option>
+							<option>4456</option>
+					</select></td>
+					<br>
+				</tr>
+				<tr>
+					<td>입사일</td>
+					<td><input type="text" size="10" placeholder="2012-01-01"></td>
+				</tr>
+				<tr>
+					<td>급여</td>
+					<td><input type="text" size="10"></td>
+				</tr>
+				<tr>
+					<td>커미션</td>
+					<td><input type="text" size="10"></td>
+				</tr>
+				<tr>
+					<td>부서번호</td>
+					<td><select>
+							<option>10 Accounting NEWYORK</option>
+							<option>20 Accounting SEOUL</option>
+							<option>30 Accounting LONDON</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" value="저장">
+						<input type="button" value="취소"></td>
+				</tr>
+			</table>
+		</form>
+</body>
+</html>
